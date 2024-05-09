@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Basic Calculator</title>
+      <link href=
+"https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" 
+          rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex justify-center 
+             items-center h-screen">
+
+
+
+
+       <!--<div class="max-w-screen-lg mx-0 flex w-9/12">-->      
+
+             <div class="max-w-screen-1/1 mx-auto ">
+
+                <table height  = "90%" width="90%" class="  table-auto border  bg-white shadow-md">
+                    <thead>
+                        <tr class="bg-yellow-500 text-white">
+                            <th class="border  px-4 py-2">Name: </th>
+                            <th class="border  px-4 py-2">Mamun Mahmud</th>
+                            <th class="border  px-4 py-2">ID: </th>
+                            <th class="border  px-4 py-2">C221046</th>
+                            <th class="border  px-4 py-2">Autumn-24</th>
+                        </tr>
+                    </thead>
+                </table>
+
+                <table height  = "90%" width="90%" class="  table-auto border border-gray-400 bg-white shadow-md">
+                    <thead>
+                        <tr class="bg-blue-500 text-white">
+                            <th class="border border-gray-400 px-4 py-2">Course ID </th>
+                            <th class="border border-gray-400 px-4 py-2">ADD</th>
+                            <th class="border border-gray-400 px-4 py-2">DROP</th>
+                            <th class="border border-gray-400 px-4 py-2">Credit Hour</th>
+                            <th class="border border-gray-400 px-4 py-2">Tk per Credit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2">EEE-2421</td>
+                            <td class="border border-gray-400 px-4 py-2"><button id="add"  style="background-color: gray;" class=" hover:bg-gray-400 
+                                text-gray-800 font-bold py-2 
+                                px-4 rounded"  onclick="append_course('+1700'); calculateResult2(); changeColor()">ADD</button></td>
+                                <td class="border border-gray-400 px-4 py-2"><button id="drop"  style="background-color: red;" class=" hover:bg-gray-400 
+                                    text-gray-800 font-bold py-2 
+                                    px-4 rounded"  onclick="append_course_drop('-1700'); calculateResult2_drop(); changeColor_drop()">DROP</button></td>
+                            <td class="border border-gray-400 px-4 py-2">1</td>
+                            <td class="border border-gray-400 px-4 py-2">1700</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2">EEE-2422</td>
+                            <td class="border border-gray-400 px-4 py-2"><button id="add3"  style="background-color: gray;" class=" hover:bg-gray-400 
+                                text-gray-800 font-bold py-2 
+                                px-4 rounded"  onclick="append_course3('+5100'); calculateResult3(); changeColor3()">ADD</button></td>
+                                <td class="border border-gray-400 px-4 py-2"><button id="drop3"  style="background-color: red;" class=" hover:bg-gray-400 
+                                    text-gray-800 font-bold py-2 
+                                    px-4 rounded"  onclick="append_course_drop3('-5100'); calculateResult2_drop3(); changeColor_drop3()">DROP</button></td>
+                            <td class="border border-gray-400 px-4 py-2">3</td>
+                            <td class="border border-gray-400 px-4 py-2">1700</td>
+                        </tr>
+
+                        <tr>
+                            <td class="border border-gray-400 px-4 py-2">CSE-3521</td>
+                            <td class="border border-gray-400 px-4 py-2"><button id="add4"  style="background-color: gray;" class=" hover:bg-gray-400 
+                                text-gray-800 font-bold py-2 
+                                px-4 rounded"  onclick="append_course4('+6600'); calculateResult4(); changeColor4()">ADD</button></td>
+                                <td class="border border-gray-400 px-4 py-2"><button id="drop4"  style="background-color: red;" class=" hover:bg-gray-400 
+                                    text-gray-800 font-bold py-2 
+                                    px-4 rounded"  onclick="append_course_drop4('-6600'); calculateResult2_drop4(); changeColor_drop4()">DROP</button></td>
+                            <td class="border border-gray-400 px-4 py-2">3</td>
+                            <td class="border border-gray-400 px-4 py-2">2200</td>
+                        </tr>
+                        <!-- Add more rows here if needed -->
+                    </tbody>
+                </table>
+            </div>
+
+
+            
+
+
+    <div class="bg-white-500 p-8 rounded-lg shadow-lg 
+                border-2 border-green-500 mx-20">
+        <h1 class="text-3xl font-bold 
+                   text-center mb-4">
+            Fee Calculator
+        </h1>
+     
+        <!-- Display Section -->
+        <input type="text" id="result" 
+               class="w-full bg-gray-200 text-right 
+                      p-4 mb-4 border border-gray-300 
+                      rounded-md focus:outline-none" 
+               placeholder="0" readonly />
+
+        <!-- Input Section -->
+        <div class="grid grid-cols-4 gap-2">
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded"
+                    onclick="clearResult();default_color();">
+                C
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('(')">
+                (
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter(')')">
+                )
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('/')">
+                /
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('7')">
+                7
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('8')">
+                8
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('9')">
+                9
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('*')">
+                *
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('4')">
+                4
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('5')">
+                5
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('6')">
+                6
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('-')">
+                -
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('1')">
+                1
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('2')">
+                2
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('3')">
+                3
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('+')">
+                +
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('0')">
+                0
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('.')">
+                .
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="calculateResult()">
+                =
+            </button>
+            <button class="bg-gray-300 hover:bg-gray-400 
+                           text-gray-800 font-bold py-2 
+                           px-4 rounded" 
+                    onclick="appendCharacter('%')">
+                %
+            </button>
+        </div>
+    </div>
+
+
+  <!--  </div> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
