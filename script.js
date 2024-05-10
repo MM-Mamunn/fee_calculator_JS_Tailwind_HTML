@@ -12,9 +12,17 @@ function clearResult() {
     button.style.backgroundColor = 'gray';
     button = document.getElementById("drop");
     button.style.backgroundColor = 'red';
-    var button = document.getElementById("add4");
+    button = document.getElementById("add4");
     button.style.backgroundColor = 'gray';
     button = document.getElementById("drop4");
+    button.style.backgroundColor = 'red';
+    button = document.getElementById("add5");
+    button.style.backgroundColor = 'gray';
+    button = document.getElementById("drop5");
+    button.style.backgroundColor = 'red';
+    button = document.getElementById("add6");
+    button.style.backgroundColor = 'gray';
+    button = document.getElementById("drop6");
     button.style.backgroundColor = 'red';
 }
 
@@ -336,6 +344,314 @@ function changeColor_drop4() {
     // Change the background color to red
     button.style.backgroundColor = 'red';
     button = document.getElementById('add4');
+    
+    // Change the background color to red
+    button.style.backgroundColor = 'gray';
+}
+
+
+
+///4th course
+
+function calculateResult5() 
+{
+    var button = document.getElementById('add5');
+    if (button.style.backgroundColor === 'red')
+        { 
+        
+        }
+    else {
+        let result = 
+
+        document.getElementById("result").value;
+    try {
+        result = eval(result);
+        document.getElementById("result").
+        value = result;
+    } catch (error) {
+        document.getElementById("result").
+        value = "Error";
+    }
+}
+}
+
+function append_course5(string) {
+
+    var button = document.getElementById('add5');
+    if (button.style.backgroundColor === 'red')
+        { 
+            document.getElementById("result2").
+            value = 'Already selected';
+        }
+    else {
+   document.getElementById("result").
+    value += string;
+    }
+}
+
+function changeColor5() {
+    // Get the button element
+    var button = document.getElementById('add5');
+    
+    // Change the background color to red
+    button.style.backgroundColor = 'red';
+    button = document.getElementById('drop5');
+    
+    // Change the background color to red
+    button.style.backgroundColor = 'gray';
+}
+
+
+
+
+function calculateResult2_drop5() 
+{
+    var button = document.getElementById('drop5');
+    if (button.style.backgroundColor === 'gray')
+        { 
+        
+    let result = 
+
+    document.getElementById("result").value;
+try {
+    result = eval(result);
+    document.getElementById("result").
+    value = result;
+} catch (error) {
+    document.getElementById("result").
+    value = "Error";
+}
+        }
+    else {
+}
+}
+
+function append_course_drop5(string) {
+
+    var button = document.getElementById('drop5');
+    if (button.style.backgroundColor === 'red')
+        { 
+            document.getElementById("result2").
+            value = 'Already selected';
+        }
+    else {
+   document.getElementById("result").
+    value += string;
+    }
+}
+
+function changeColor_drop5() {
+    // Get the button element
+    var button = document.getElementById('drop5');
+    
+    // Change the background color to red
+    button.style.backgroundColor = 'red';
+    button = document.getElementById('add5');
+    
+    // Change the background color to red
+    button.style.backgroundColor = 'gray';
+}
+
+
+///5th course
+
+function calculateResult6() 
+{
+    var button = document.getElementById('add6');
+    if (button.style.backgroundColor === 'red')
+        { 
+        
+        }
+    else {
+        let result = 
+
+        document.getElementById("result").value;
+    try {
+        result = eval(result);
+        document.getElementById("result").
+        value = result;
+    } catch (error) {
+        document.getElementById("result").
+        value = "Error";
+    }
+}
+}
+
+function append_course6(string) {
+
+    var button = document.getElementById('add6');
+    if (button.style.backgroundColor === 'red')
+        { 
+            document.getElementById("result2").
+            value = 'Already selected';
+        }
+    else {
+   document.getElementById("result").
+    value += string;
+    }
+}
+
+function changeColor6() {
+    // Get the button element
+    var button = document.getElementById('add6');
+    
+    // Change the background color to red
+    button.style.backgroundColor = 'red';
+    button = document.getElementById('drop6');
+    
+    // Change the background color to red
+    button.style.backgroundColor = 'gray';
+}
+
+
+
+
+function calculateResult2_drop6() 
+{
+    var button = document.getElementById('drop6');
+    if (button.style.backgroundColor === 'gray')
+        { 
+        
+    let result = 
+
+    document.getElementById("result").value;
+try {
+    result = eval(result);
+    document.getElementById("result").
+    value = result;
+} catch (error) {
+    document.getElementById("result").
+    value = "Error";
+}
+        }
+    else {
+}
+}
+
+function append_course_drop6(string) {
+
+    var button = document.getElementById('drop6');
+    if (button.style.backgroundColor === 'red')
+        { 
+            document.getElementById("result2").
+            value = 'Already selected';
+        }
+    else {
+   document.getElementById("result").
+    value += string;
+    }
+}
+
+function changeColor_drop6() {
+    // Get the button element
+    var button = document.getElementById('drop6');
+    
+    // Change the background color to red
+    button.style.backgroundColor = 'red';
+    button = document.getElementById('add6');
+    
+    // Change the background color to red
+    button.style.backgroundColor = 'gray';
+}
+
+
+
+///6th course
+
+function calculateResult7() 
+{
+    var button = document.getElementById('add7');
+    if (button.style.backgroundColor === 'red')
+        { 
+        
+        }
+    else {
+        let result = 
+
+        document.getElementById("result").value;
+    try {
+        result = eval(result);
+        document.getElementById("result").
+        value = result;
+    } catch (error) {
+        document.getElementById("result").
+        value = "Error";
+    }
+}
+}
+
+function append_course7(string) {
+
+    var button = document.getElementById('add7');
+    if (button.style.backgroundColor === 'red')
+        { 
+            document.getElementById("result2").
+            value = 'Already selected';
+        }
+    else {
+   document.getElementById("result").
+    value += string;
+    }
+}
+
+function changeColor7() {
+    // Get the button element
+    var button = document.getElementById('add7');
+    
+    // Change the background color to red
+    button.style.backgroundColor = 'red';
+    button = document.getElementById('drop7');
+    
+    // Change the background color to red
+    button.style.backgroundColor = 'gray';
+}
+
+
+
+
+function calculateResult2_drop7() 
+{
+    var button = document.getElementById('drop7');
+    if (button.style.backgroundColor === 'gray')
+        { 
+        
+    let result = 
+
+    document.getElementById("result").value;
+try {
+    result = eval(result);
+    document.getElementById("result").
+    value = result;
+} catch (error) {
+    document.getElementById("result").
+    value = "Error";
+}
+        }
+    else {
+}
+}
+
+function append_course_drop7(string) {
+
+    var button = document.getElementById('drop7');
+    if (button.style.backgroundColor === 'red')
+        { 
+            document.getElementById("result2").
+            value = 'Already selected';
+        }
+    else {
+   document.getElementById("result").
+    value += string;
+    }
+}
+
+function changeColor_drop7() {
+    // Get the button element
+    var button = document.getElementById('drop7');
+    
+    // Change the background color to red
+    button.style.backgroundColor = 'red';
+    button = document.getElementById('add7');
     
     // Change the background color to red
     button.style.backgroundColor = 'gray';
