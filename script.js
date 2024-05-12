@@ -26,6 +26,10 @@ function clearResult() {
     button.style.backgroundColor = 'gray';
     button = document.getElementById("drop6");
     button.style.backgroundColor = 'red';
+    button = document.getElementById("add7");
+    button.style.backgroundColor = 'gray';
+    button = document.getElementById("drop7");
+    button.style.backgroundColor = 'red';
 }
 
 // The user input
